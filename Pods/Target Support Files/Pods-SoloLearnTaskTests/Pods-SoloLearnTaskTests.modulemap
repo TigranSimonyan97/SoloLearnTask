@@ -1,0 +1,6 @@
+framework module Pods_SoloLearnTaskTests {
+  umbrella header "Pods-SoloLearnTaskTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
