@@ -91,22 +91,12 @@ class ArticleDetailsViewController: UIViewController {
 
     fileprivate func wordsCountInText(_ text: String) -> [String: Int] {
         var wordsWithCountInText = [String: Int]()
-        var array = text.split(separator: " ")
-        
-        var finalArray = [String]()
-        for item in 0 ..< array.count {
-            finalArray.append( String(array[item].trimmingCharacters(in: CharacterSet(charactersIn: "!@#$%^&*(),:;"))))
-        }
-        
-        finalArray = finalArray.filter { $0 != "" }
-        
-        for item in finalArray {
-            if let wordCount = wordsWithCountInText[item] {
-                wordsWithCountInText[item] = wordCount + 1
-            } else {
-                wordsWithCountInText[item] = 1
+        _ = text.split(separator: " ")
+            .map { $0.trimmingCharacters(in: CharacterSet(charactersIn: "!@#$%^&*(),:;")) }
+            .filter { $0 != "" }
+            .map {
+                wordsWithCountInText[$0] = (wordsWithCountInText[$0] ?? 0) + 1
             }
-        }
         
         return wordsWithCountInText
     }
@@ -128,10 +118,9 @@ class ArticleDetailsViewController: UIViewController {
     }
     
     fileprivate func setupTags() {
-        let tagsArray = article.webTitle.split(separator: " ")
-                                             .map { $0.trimmingCharacters(in: CharacterSet(charactersIn: "!@#$%^&*(),:;")) }
-                                             .filter { !$0.isEmpty }
-        tags = tagsArray
+        tags = article.webTitle.split(separator: " ")
+                .map { $0.trimmingCharacters(in: CharacterSet(charactersIn: "!@#$%^&*(),:;")) }
+                .filter { !$0.isEmpty }
     }
     
     //MARK: - Work For Most Used Words
@@ -234,7 +223,6 @@ class ArticleDetailsViewController: UIViewController {
         
         articleAuthorNameLabel.text = authorName
     }
-
 }
 
 extension ArticleDetailsViewController : UITableViewDelegate, UITableViewDataSource {
@@ -252,7 +240,7 @@ extension ArticleDetailsViewController : UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if let view = tableView.headerView(forSection: 0) {
-        view.backgroundColor = .clear
+            view.backgroundColor = .clear
             return view
         }
         
@@ -277,6 +265,7 @@ extension ArticleDetailsViewController : UITableViewDelegate, UITableViewDataSou
         }
     }
 }
+
 
 extension ArticleDetailsViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func numberOfSections(in collectionView: UICollectionView) -> Int {

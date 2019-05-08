@@ -21,12 +21,7 @@ class ArticlesListViewController: UIViewController {
     let cellIdentifier = "articleCell"
 
     var articles = BehaviorRelay<[ArticleModel]>(value: [])
-    var selectedArticle: ArticleModel!
-    
-    var articlesImages = [UIImage]()
-    
-    var isLoading = false
-    
+
     var currentPageIndex = BehaviorRelay<Int>(value: 1)
 
     var disposeBag = DisposeBag()
@@ -55,12 +50,11 @@ class ArticlesListViewController: UIViewController {
         .disposed(by: disposeBag)
         
         
-        articles.bind(to: articlesTableView.rx.items(cellIdentifier: cellIdentifier)) { index, model, cell in
-                guard let articleCell = cell as? ArticleCell else { return }
-                articleCell.articleTitleLabel.text = model.webTitle
-                articleCell.articlePhotoImageView.image = UIImage(named: "photoalbum")
+        articles.bind(to: articlesTableView.rx.items(cellIdentifier: cellIdentifier, cellType: ArticleCell.self)) { index, model, cell in
+                cell.articleTitleLabel.text = model.webTitle
+                cell.articlePhotoImageView.image = UIImage(named: "photoalbum")
                 if let imagePath = model.fields["thumbnail"], let imageURL = URL(string: imagePath) {
-                    articleCell.articlePhotoImageView.af_setImage(withURL: imageURL)
+                    cell.articlePhotoImageView.af_setImage(withURL: imageURL)
                 }
             }
             .disposed(by: disposeBag)
@@ -80,11 +74,6 @@ class ArticlesListViewController: UIViewController {
         let backItem = UIBarButtonItem()
         backItem.title = ""
         navigationItem.backBarButtonItem = backItem
-        
-        if segue.identifier == "showArticleDetails" {
-            let destination = segue.destination as! ArticleDetailsViewController
-            destination.article = self.selectedArticle
-        }
     }
 }
 
