@@ -13,6 +13,8 @@ import RxDataSources
 import Alamofire
 import AlamofireImage
 
+import CoreTrick
+
 class ArticlesListViewController: UIViewController {
 
     @IBOutlet weak var articlesTableView: UITableView!
@@ -31,6 +33,13 @@ class ArticlesListViewController: UIViewController {
 
         configureArticlesTableView()
         configureReactiveBinding()
+        
+        
+        if let threeSixty = SnowboardJumpTrick(grabName: "Mute", spinDegrees: 360) {
+            print("A valid snowboarding trick was created.")
+            print("Number of successful attempts: \(threeSixty.timesLanded)")
+        }
+
     }
     
     fileprivate func configureArticlesTableView() {

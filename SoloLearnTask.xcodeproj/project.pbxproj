@@ -10,6 +10,13 @@
 		0575EE15C23BD519724CB142 /* Pods_SoloLearnTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32ED5BD9287DB62B45C29CBF /* Pods_SoloLearnTaskUITests.framework */; };
 		5CD5CBDFDD10EC80BF119509 /* Pods_SoloLearnTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061BB231C097D0598AFFBA15 /* Pods_SoloLearnTaskTests.framework */; };
 		67BC0462700285524934CE61 /* Pods_SoloLearnTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142B35397805709456CF9101 /* Pods_SoloLearnTask.framework */; };
+		B3195FCA22840A9D003C060C /* CoreTrick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3195FC122840A9D003C060C /* CoreTrick.framework */; };
+		B3195FD122840A9D003C060C /* CoreTrickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3195FD022840A9D003C060C /* CoreTrickTests.swift */; };
+		B3195FD322840A9D003C060C /* CoreTrick.h in Headers */ = {isa = PBXBuildFile; fileRef = B3195FC322840A9D003C060C /* CoreTrick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3195FD622840A9D003C060C /* CoreTrick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3195FC122840A9D003C060C /* CoreTrick.framework */; };
+		B3195FD722840A9D003C060C /* CoreTrick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3195FC122840A9D003C060C /* CoreTrick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3195FE222841062003C060C /* SnowboardJumpTrickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3195FE122841062003C060C /* SnowboardJumpTrickTests.swift */; };
+		B3195FE42284129F003C060C /* SnowboardJumpTrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3195FDF22840B76003C060C /* SnowboardJumpTrick.swift */; };
 		B357C97D226ED21500D12408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B357C97C226ED21500D12408 /* AppDelegate.swift */; };
 		B357C984226ED21B00D12408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B357C983226ED21B00D12408 /* Assets.xcassets */; };
 		B357C987226ED21B00D12408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B357C985226ED21B00D12408 /* LaunchScreen.storyboard */; };
@@ -28,6 +35,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B3195FCB22840A9D003C060C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B357C971226ED21500D12408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3195FC022840A9D003C060C;
+			remoteInfo = CoreTrick;
+		};
+		B3195FCD22840A9D003C060C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B357C971226ED21500D12408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B357C978226ED21500D12408;
+			remoteInfo = SoloLearnTask;
+		};
+		B3195FD422840A9D003C060C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B357C971226ED21500D12408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3195FC022840A9D003C060C;
+			remoteInfo = CoreTrick;
+		};
 		B357C98E226ED21B00D12408 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B357C971226ED21500D12408 /* Project object */;
@@ -44,6 +72,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B3195FDD22840A9D003C060C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B3195FD722840A9D003C060C /* CoreTrick.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		061BB231C097D0598AFFBA15 /* Pods_SoloLearnTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoloLearnTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B25E4D6E931C9F8699AB960 /* Pods-SoloLearnTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoloLearnTask.debug.xcconfig"; path = "Target Support Files/Pods-SoloLearnTask/Pods-SoloLearnTask.debug.xcconfig"; sourceTree = "<group>"; };
@@ -52,6 +94,14 @@
 		470EE6FCFD3C7C799EF84883 /* Pods-SoloLearnTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoloLearnTaskTests.release.xcconfig"; path = "Target Support Files/Pods-SoloLearnTaskTests/Pods-SoloLearnTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		4C8440CE7D99234F5064E153 /* Pods-SoloLearnTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoloLearnTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-SoloLearnTaskUITests/Pods-SoloLearnTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C0D4ADC96E088EE35D19995 /* Pods-SoloLearnTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoloLearnTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-SoloLearnTaskUITests/Pods-SoloLearnTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B3195FC122840A9D003C060C /* CoreTrick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreTrick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3195FC322840A9D003C060C /* CoreTrick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTrick.h; sourceTree = "<group>"; };
+		B3195FC422840A9D003C060C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3195FC922840A9D003C060C /* CoreTrickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTrickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3195FD022840A9D003C060C /* CoreTrickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTrickTests.swift; sourceTree = "<group>"; };
+		B3195FD222840A9D003C060C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3195FDF22840B76003C060C /* SnowboardJumpTrick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowboardJumpTrick.swift; sourceTree = "<group>"; };
+		B3195FE122841062003C060C /* SnowboardJumpTrickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SnowboardJumpTrickTests.swift; path = CoreTrickTests/SnowboardJumpTrickTests.swift; sourceTree = SOURCE_ROOT; };
 		B357C979226ED21500D12408 /* SoloLearnTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoloLearnTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B357C97C226ED21500D12408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B357C983226ED21B00D12408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,11 +128,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B3195FBE22840A9D003C060C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3195FC622840A9D003C060C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3195FCA22840A9D003C060C /* CoreTrick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B357C976226ED21500D12408 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				67BC0462700285524934CE61 /* Pods_SoloLearnTask.framework in Frameworks */,
+				B3195FD622840A9D003C060C /* CoreTrick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,12 +194,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B3195FC222840A9D003C060C /* CoreTrick */ = {
+			isa = PBXGroup;
+			children = (
+				B3195FDF22840B76003C060C /* SnowboardJumpTrick.swift */,
+				B3195FC322840A9D003C060C /* CoreTrick.h */,
+				B3195FC422840A9D003C060C /* Info.plist */,
+			);
+			path = CoreTrick;
+			sourceTree = "<group>";
+		};
+		B3195FCF22840A9D003C060C /* CoreTrickTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3195FE122841062003C060C /* SnowboardJumpTrickTests.swift */,
+				B3195FD022840A9D003C060C /* CoreTrickTests.swift */,
+				B3195FD222840A9D003C060C /* Info.plist */,
+			);
+			path = CoreTrickTests;
+			sourceTree = "<group>";
+		};
 		B357C970226ED21500D12408 = {
 			isa = PBXGroup;
 			children = (
 				B357C97B226ED21500D12408 /* SoloLearnTask */,
 				B357C990226ED21B00D12408 /* SoloLearnTaskTests */,
 				B357C99B226ED21B00D12408 /* SoloLearnTaskUITests */,
+				B3195FC222840A9D003C060C /* CoreTrick */,
+				B3195FCF22840A9D003C060C /* CoreTrickTests */,
 				B357C97A226ED21500D12408 /* Products */,
 				02422A1E0ED4C92394071128 /* Pods */,
 				AB22744B6FAF24213125C4B9 /* Frameworks */,
@@ -146,6 +234,8 @@
 				B357C979226ED21500D12408 /* SoloLearnTask.app */,
 				B357C98D226ED21B00D12408 /* SoloLearnTaskTests.xctest */,
 				B357C998226ED21B00D12408 /* SoloLearnTaskUITests.xctest */,
+				B3195FC122840A9D003C060C /* CoreTrick.framework */,
+				B3195FC922840A9D003C060C /* CoreTrickTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,7 +313,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B3195FBC22840A9D003C060C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3195FD322840A9D003C060C /* CoreTrick.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		B3195FC022840A9D003C060C /* CoreTrick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3195FDC22840A9D003C060C /* Build configuration list for PBXNativeTarget "CoreTrick" */;
+			buildPhases = (
+				B3195FBC22840A9D003C060C /* Headers */,
+				B3195FBD22840A9D003C060C /* Sources */,
+				B3195FBE22840A9D003C060C /* Frameworks */,
+				B3195FBF22840A9D003C060C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreTrick;
+			productName = CoreTrick;
+			productReference = B3195FC122840A9D003C060C /* CoreTrick.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B3195FC822840A9D003C060C /* CoreTrickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3195FDE22840A9D003C060C /* Build configuration list for PBXNativeTarget "CoreTrickTests" */;
+			buildPhases = (
+				B3195FC522840A9D003C060C /* Sources */,
+				B3195FC622840A9D003C060C /* Frameworks */,
+				B3195FC722840A9D003C060C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3195FCC22840A9D003C060C /* PBXTargetDependency */,
+				B3195FCE22840A9D003C060C /* PBXTargetDependency */,
+			);
+			name = CoreTrickTests;
+			productName = CoreTrickTests;
+			productReference = B3195FC922840A9D003C060C /* CoreTrickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B357C978226ED21500D12408 /* SoloLearnTask */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B357C9A1226ED21B00D12408 /* Build configuration list for PBXNativeTarget "SoloLearnTask" */;
@@ -233,10 +371,12 @@
 				B357C976226ED21500D12408 /* Frameworks */,
 				B357C977226ED21500D12408 /* Resources */,
 				18CD04C24F9EDB70DCBE29B7 /* [CP] Embed Pods Frameworks */,
+				B3195FDD22840A9D003C060C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B3195FD522840A9D003C060C /* PBXTargetDependency */,
 			);
 			name = SoloLearnTask;
 			productName = SoloLearnTask;
@@ -291,6 +431,13 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Tigran  Simonyan";
 				TargetAttributes = {
+					B3195FC022840A9D003C060C = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					B3195FC822840A9D003C060C = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = B357C978226ED21500D12408;
+					};
 					B357C978226ED21500D12408 = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -320,11 +467,27 @@
 				B357C978226ED21500D12408 /* SoloLearnTask */,
 				B357C98C226ED21B00D12408 /* SoloLearnTaskTests */,
 				B357C997226ED21B00D12408 /* SoloLearnTaskUITests */,
+				B3195FC022840A9D003C060C /* CoreTrick */,
+				B3195FC822840A9D003C060C /* CoreTrickTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B3195FBF22840A9D003C060C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3195FC722840A9D003C060C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B357C977226ED21500D12408 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,6 +616,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B3195FBD22840A9D003C060C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3195FE42284129F003C060C /* SnowboardJumpTrick.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3195FC522840A9D003C060C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3195FD122840A9D003C060C /* CoreTrickTests.swift in Sources */,
+				B3195FE222841062003C060C /* SnowboardJumpTrickTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B357C975226ED21500D12408 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -489,6 +669,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B3195FCC22840A9D003C060C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3195FC022840A9D003C060C /* CoreTrick */;
+			targetProxy = B3195FCB22840A9D003C060C /* PBXContainerItemProxy */;
+		};
+		B3195FCE22840A9D003C060C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B357C978226ED21500D12408 /* SoloLearnTask */;
+			targetProxy = B3195FCD22840A9D003C060C /* PBXContainerItemProxy */;
+		};
+		B3195FD522840A9D003C060C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3195FC022840A9D003C060C /* CoreTrick */;
+			targetProxy = B3195FD422840A9D003C060C /* PBXContainerItemProxy */;
+		};
 		B357C98F226ED21B00D12408 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B357C978226ED21500D12408 /* SoloLearnTask */;
@@ -513,6 +708,104 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B3195FD822840A9D003C060C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J8LMSVQ7VT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CoreTrick/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigransApp.CoreTrick;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3195FD922840A9D003C060C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J8LMSVQ7VT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CoreTrick/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigransApp.CoreTrick;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3195FDA22840A9D003C060C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8LMSVQ7VT;
+				INFOPLIST_FILE = CoreTrickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigransApp.CoreTrickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoloLearnTask.app/SoloLearnTask";
+			};
+			name = Debug;
+		};
+		B3195FDB22840A9D003C060C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8LMSVQ7VT;
+				INFOPLIST_FILE = CoreTrickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigransApp.CoreTrickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoloLearnTask.app/SoloLearnTask";
+			};
+			name = Release;
+		};
 		B357C99F226ED21B00D12408 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -633,6 +926,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B25E4D6E931C9F8699AB960 /* Pods-SoloLearnTask.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8LMSVQ7VT;
@@ -653,6 +947,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D920F7B4EDD8D469B15343FE /* Pods-SoloLearnTask.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8LMSVQ7VT;
@@ -758,6 +1053,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B3195FDC22840A9D003C060C /* Build configuration list for PBXNativeTarget "CoreTrick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3195FD822840A9D003C060C /* Debug */,
+				B3195FD922840A9D003C060C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3195FDE22840A9D003C060C /* Build configuration list for PBXNativeTarget "CoreTrickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3195FDA22840A9D003C060C /* Debug */,
+				B3195FDB22840A9D003C060C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B357C974226ED21500D12408 /* Build configuration list for PBXProject "SoloLearnTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
