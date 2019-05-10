@@ -34,7 +34,6 @@ class ArticlesListViewController: UIViewController {
         configureArticlesTableView()
         configureReactiveBinding()
         
-        
         if let threeSixty = SnowboardJumpTrick(grabName: "Mute", spinDegrees: 360) {
             print("A valid snowboarding trick was created.")
             print("Number of successful attempts: \(threeSixty.timesLanded)")
