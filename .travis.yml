@@ -2,5 +2,4 @@ osx_image: xcode10.2
 language: swift
 os: osx
 script:
-  - xctool -workspace SoloLearnTask.xcworkspace -scheme SoloLearnTask -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xctool test -workspace SoloLearnTask.xcworkspace -scheme SoloLearnTask -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  — xcodebuild clean build -workspace SoloLearnTask.xcworkspace -scheme SoloLearnTask -destination "platform=iOS Simulator,name=iPhone 6S"
