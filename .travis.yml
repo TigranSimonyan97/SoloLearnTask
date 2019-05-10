@@ -3,3 +3,4 @@ language: swift
 os: osx
 script:
   — xcodebuild clean build -workspace SoloLearnTask.xcworkspace -scheme SoloLearnTask -destination "platform=iOS Simulator,name=iPhone 6S"
+before_install: gem install bundler
